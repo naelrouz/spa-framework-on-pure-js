@@ -1,14 +1,14 @@
 import { WFMComponent } from '../../framework';
 
-class AppHomePage extends WFMComponent {
+class AppTabsPage extends WFMComponent {
   constructor(config) {
     super(config);
   }
 }
 
-export default new AppHomePage({
-  selector: 'home-page',
+export default new AppTabsPage({
+  selector: 'app-tabs-page',
   template: `
-  <h1>Home Page</h1>
+  <h1>Tabs Page</h1>
   `
 });

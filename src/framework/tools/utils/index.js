@@ -1,11 +1,5 @@
-const utils = {
-  delay(ms=1000){
-    return new Promise(resolve=>{
-      setTimeout(()=>{
-        resolve();
-      },ms)
-    })
-  }
-};
+import  delay from './delay'
 
-export default utils;
+export default {
+  delay
+};

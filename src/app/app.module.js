@@ -1,5 +1,7 @@
 import { WFMModule } from '../framework';
 import appComponent from './app.component';
+import appHeader from './common/app.header';
+import appRoutes from './app.routes';
 
 class AppModule extends WFMModule {
   constructor(config) {
@@ -8,5 +10,7 @@ class AppModule extends WFMModule {
 }
 
 export default new AppModule({
-  components: [appComponent]
+  components: [appHeader],
+  bootstrap: appComponent,
+  routes: appRoutes
 });

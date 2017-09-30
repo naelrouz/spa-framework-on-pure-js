@@ -1,24 +1,15 @@
 import { WFMComponent } from '../../framework';
 // import pug from 'pug'
 
-class AppHeader extends WFMComponent {
+class NotFound extends WFMComponent {
   constructor(config) {
     super(config);
   }
 }
 
-export default new AppHeader({
-  selector: 'app-header',
+export default new NotFound({
+  selector: 'app-not-found',
   template: `
-   <nav class="indigo">
-    <div class="nav-wrapper" >
-      <!--<a style="margin-left: 20px;" href="#" class="brand-logo">Native FrameWork</a>-->
-      <ul id="nav-mobile" class="">
-        <li><a href="#">Home</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#tabs">Tabs</a></li>
-      </ul>
-    </div>
-  </nav>
+   <div><h1>404 Not Found</h1></div>
   `
 });
