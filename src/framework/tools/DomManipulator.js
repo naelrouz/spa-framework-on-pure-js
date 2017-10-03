@@ -3,7 +3,7 @@ import { utils } from 'framework';
 class DomManipulator {
   constructor(el) {
     this.nativeElement = utils.isString(el) ? document.querySelector(el) : el;
-    this.isWFE = true;
+    this.isDME = true;
   }
 
   on(elementName, fn, context = null) {
@@ -41,14 +41,14 @@ class DomManipulator {
   }
 
   html(html) {
-    if (html.isWFE) {
+    if (html.isDME) {
       html = html.nativeElement.innerHTML;
     }
     this.nativeElement.innerHTML = html;
     return this;
   }
   append(el) {
-    if (el.isFME) el = el.nativeElement;
+    if (el.isDME) el = el.nativeElement;
     this.nativeElement.appendChild(el);
     return this;
   }
