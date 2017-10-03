@@ -1,7 +1,8 @@
-import WFMModule from './core/module';
-import WFMComponent from './core/component';
+import Module from './core/module';
+import Component from './core/component/component';
 import bootstrap from './core/bootstrap';
 import utils from './tools/utils';
-import router from './tools/router'
+import routerTools from './tools';
+import { dm } from './tools/DomManipulator';
 
-export { WFMModule, WFMComponent, bootstrap, utils, router };
+export { Module, Component, bootstrap, utils, routerTools, dm };

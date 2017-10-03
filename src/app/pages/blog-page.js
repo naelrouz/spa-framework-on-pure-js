@@ -1,6 +1,6 @@
-import { WFMComponent } from '../../framework';
+import { Component } from 'framework';
 
-class AppBlogPage extends WFMComponent {
+class AppBlogPage extends Component {
   constructor(config) {
     super(config);
   }

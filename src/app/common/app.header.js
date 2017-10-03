@@ -1,7 +1,7 @@
-import { WFMComponent } from '../../framework';
+import { Component } from 'framework';
 // import pug from 'pug'
 
-class AppHeader extends WFMComponent {
+class AppHeader extends Component {
   constructor(config) {
     super(config);
   }

@@ -1,12 +1,13 @@
-import '../node_modules/materialize-css/dist/js/materialize.min';
+import './styles/preloader.css';
+import './styles/index.styl';
+// import 'materialize-css'
+// import '../node_modules/materialize-css/dist/css/materialize.min.css'
 
-import { bootstrap, utils } from './framework';
+import { bootstrap, utils } from 'framework';
 import appModule from './app/app.module';
 
-// utils.delay(1000).then(() => {
-//   bootstrap(appModule);
-// });
-
 window.addEventListener('load', () => {
-  bootstrap(appModule);
+  utils.delay(0).then(() => {
+    bootstrap(appModule);
+  });
 });

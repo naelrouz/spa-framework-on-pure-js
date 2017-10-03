@@ -1,7 +1,7 @@
-import { WFMComponent } from '../../framework';
+import { Component } from 'framework';
 // import pug from 'pug'
 
-class NotFound extends WFMComponent {
+class NotFound extends Component {
   constructor(config) {
     super(config);
   }
